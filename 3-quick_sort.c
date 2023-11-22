@@ -1,5 +1,4 @@
 #include "sort.h"
-
 /**
  * lomuto_partition - sort a sub array of integers according to
  *                    the lomuto partition scheme (last element as pivot).
@@ -36,7 +35,6 @@ int lomuto_partition(int *array, size_t size, int left, int right)
 
 	return (above);
 }
-
 /**
  * lomuto_sort - Implement the quicksort algorithm through recursion.
  * @array: An array of integers to sort.
@@ -57,7 +55,6 @@ void lomuto_sort(int *array, size_t size, int left, int right)
 		lomuto_sort(array, size, part + 1, right);
 	}
 }
-
 /**
  * quick_sort - Sort an array of integers in ascending
  *              order using the quicksort algorithm.
