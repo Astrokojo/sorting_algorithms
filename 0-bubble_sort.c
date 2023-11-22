@@ -8,6 +8,10 @@
 void bubble_sort(int *array, size_t size)
 {
 	size_t step;
+
+	if (array == NULL || size < 2)
+		return;
+
 /*loop to access each element of the array - outer loop*/
 	for (step = 0; step <= (size - 1); step++)
 	{
